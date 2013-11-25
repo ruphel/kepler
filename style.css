@@ -1,0 +1,190 @@
+/**
+ * Theme Name: Kepler
+ * Theme URI: http://cyberdesigncraft.com/themes/wordpress/hybridcore/kepler
+ * Description: A child theme of stargazer parent theme.
+ * Version: 1.0
+ * Author: Ruairi Phelan
+ * Author URI: http://cyberdesigncraft.com
+ * Text Domain: kepler
+ * Tags: one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, white, light
+ * License: GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: stargazer
+ */
+
+ /* Thanks to Justin Tadlock and Sami Keijonen I have literally teaked their code */
+
+/* Primary menu color in all screen aizes. */
+#menu-primary {
+	background: #272727;
+}
+
+#menu-primary {
+	background: #272727;
+	float: none;
+
+}
+#site-title {
+	color:#272727;
+	font-size: 2rem;
+	font-weight: 400;
+}
+.ltr .latest,
+.ltr .top-image {
+	text-align: center;
+}
+
+#site-description {
+	font-family: 'Open Sans', serif;
+	font-style: none;
+}
+.entry-content a {
+	color: #0088cc;
+}
+
+.widget a {
+	color:#325a6f;
+}
+@media only screen and (max-width: 767px) {
+
+.widget_cta {
+	text-align: center;
+}
+.cta-left,
+.cta-right {
+	margin: 0;
+	width: 100%;
+	float: left;
+	clear: both;
+	text-align: center;
+	margin-top: 30px;
+	padding-bottom: 15px;
+	}
+}
+
+/* Primary and secondary menu styles in narrow screen. */
+@media screen and (max-width: 799px) {
+
+.custom-background #container > .wrap {
+	margin-top: 0;
+}
+#menu-primary ul,
+#menu-secondary ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	list-style: none;
+}
+#menu-primary li,
+#menu-secondary li {
+	width: 100%;
+	display: block;
+}
+#menu-primary li a,
+#menu-secondary li a  {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #fff;
+	color: rgba( 255, 255, 255, 0.75 );
+	text-decoration: none;
+	width: 100%;
+	background: #272727;
+	border-bottom: 1px solid #222222;
+	padding: 0.7em 1em;
+	float: left;
+}
+#menu-primary li a:hover,
+#menu-primary li a:active,
+#menu-primary li a:focus,
+#menu-secondary li a:hover,
+#menu-secondary li a:active,
+#menu-secondary li a:focus {
+	background: #222222;
+}
+#menu-primary li.current-menu-item a,
+#menu-secondary li.current-menu-item a {
+	background: #222222;
+	color: #fff;
+}
+#menu-primary li.current-menu-item ul.sub-menu a,
+#menu-secondary li.current-menu-item ul.sub-menu a {
+	background: #272727;
+	color: #fff;
+}
+#menu-primary ul li a,
+#menu-secondary ul li a {
+	padding-left: 25px;
+}
+#menu-primary ul ul li a,
+#menu-secondary ul li a {
+	padding-left: 30px;
+}
+#menu-primary ul ul li a,
+#menu-secondary ul ul li a {
+	padding-left: 35px;
+}
+#menu-primary ul ul ul li a,
+#menu-secondary ul ul ul li a {
+	padding-left: 40px;
+}
+#menu-primary ul ul ul ul li a,
+#menu-secondary ul ul ul ul li a {
+	padding-left: 45px;
+}
+#menu-primary > .wrap {
+	padding-left: 0;
+	padding-right: 0;
+}
+#menu-secondary .wrap {
+	padding: 0;
+}
+
+}
+
+/* Primary and secondary menu styles in larger screens. */
+@media only screen and (min-width: 800px) {
+
+#menu-primary li li a,
+#menu-secondary li li a,
+#menu-secondary li li a:hover,
+#menu-primary ul ul > li:nth-child( odd ) a,
+#menu-primary ul ul li a:hover,
+#menu-secondary ul ul li a:hover,
+#menu-primary .search-form > div {
+	background: #272727;
+}
+#menu-primary li li a,
+#menu-primary ul ul > li:nth-child( odd ) a,
+#menu-secondary li li a {
+	border-top: 1px solid #222222;
+}
+#menu-primary ul ul li a:hover,
+#menu-secondary li li a:hover,
+#menu-secondary ul ul li a:hover {
+	background: #222222;
+}
+#menu-primary ul ul {
+	top: 45px;
+}
+.menu li > a::after {
+	margin: -1px 0 0;
+}
+.menu li > ul::before {
+	border-bottom: 6px solid #222222;
+}
+.ltr .menu li li > ul::before {
+	border-right: 6px solid #222222;
+}
+.rtl .menu li li > ul::before {
+	border-left: 6px solid #222222;
+}
+
+}
+
+/* Container color. */
+#container > .wrap  {
+	background: #fff;
+	background: rgba(255,255,255,0.9);
+}
